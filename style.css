@@ -1,0 +1,87 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("/imgs/26669.jpg");
+}
+
+header {
+  text-align: center;
+}
+
+grid {
+  margin: 0 auto;
+}
+
+.board {
+  max-width: 400px;
+  max-height: 400px;
+  width: 100vw;
+  height: 100vw;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  border: 3px solid black;
+  background-color: rgb(211, 211, 211);
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  border-radius: 4px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 90px;
+  cursor: pointer;
+}
+
+.cell:not(.o).x {
+  background-image: url("/imgs/x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cell:not(.x).o {
+  background-image: url("/imgs/o.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#scoreboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#winMessageText {
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: flex-end;
+}

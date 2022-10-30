@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script defer src="/js/app.js"></script>
+  </head>
+  <body>
+    <header><img src="/imgs/Tic Tac Toe Logo.png" /></header>
+    <grid class="board" id="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </grid>
+    <footer class="win-message" id="winMessage">
+      <div id="scoreboard">
+        <div>X Wins</div>
+        <div>O Wins</div>
+        <div id="pxWins"></div>
+        <div id="poWins"></div>
+      </div>
+      <div id="winMessageText"></div>
+      <div id="buttons">
+        <button id="nextRoundButton">Next Round</button>
+        <button id="resetButton">Reset</button>
+      </div>
+    </footer>
+  </body>
+</html>
